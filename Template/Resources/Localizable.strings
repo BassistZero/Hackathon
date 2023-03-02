@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  Template
+*/
+
+"Onboarding.page.1" = "Это приложение для февральского хакатона в Surf";
+"Onboarding.page.2" = "мы предоставим вам всю имеющуюся информацию о ней";
+"Onboarding.page.3" = "Тут вы можете сканировать баркод интересующей вас лампочки";
+"Onboarding.page.4" = "Вы можете ввести баркод вручную или использовать камеру для сканирования";
+
+"Onboarding.nextPage" = "Дальше";
+"Onboarding.finalPage" = "Перейти к приложению";
+
+"Main.scanCode" = "Сканировать штрихкод с помощью камеры";
+"Main.manualEnter" = "Ввести код вручную";
+
+"PermissionAlert.title" = "У приложения нет доступа к камере";
+"PermissionAlert.message" = "Перейдите в настройки, чтобы предоставить доступ";
+"PermissionAlert.ok" = "OK";

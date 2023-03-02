@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="Template" customModuleProvider="target">
+            <connections>
+                <outlet property="nextPageButton" destination="4pv-v3-Yrp" id="kMs-iN-e4Z"/>
+                <outlet property="pagesView" destination="FnF-03-Cij" id="cQw-Kp-8lu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FnF-03-Cij" userLabel="Pages View">
+                    <rect key="frame" x="0.0" y="59" width="393" height="691"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pz4-Do-JSg" userLabel="Close Button">
+                    <rect key="frame" x="345" y="75" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="hVa-Hc-Esj"/>
+                        <constraint firstAttribute="width" constant="32" id="tVR-q3-qjh"/>
+                    </constraints>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="handleClosePressed" destination="-1" eventType="touchUpInside" id="amg-Rj-yqF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pv-v3-Yrp" userLabel="Next Page Button">
+                    <rect key="frame" x="16" y="766" width="361" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="fHK-cu-yeF"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="handleNextPagePressed" destination="-1" eventType="touchUpInside" id="Xh5-bk-3Kl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4pv-v3-Yrp" firstAttribute="top" secondItem="FnF-03-Cij" secondAttribute="bottom" constant="16" id="0N9-IB-ILO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4pv-v3-Yrp" secondAttribute="bottom" constant="16" id="BU0-K9-HL9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pz4-Do-JSg" secondAttribute="trailing" constant="16" id="FLu-WM-FAW"/>
+                <constraint firstItem="FnF-03-Cij" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="H03-Tr-gDG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4pv-v3-Yrp" secondAttribute="trailing" constant="16" id="J80-LJ-JV0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FnF-03-Cij" secondAttribute="trailing" id="OQX-O4-2bl"/>
+                <constraint firstItem="pz4-Do-JSg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="QD2-jP-c6k"/>
+                <constraint firstItem="4pv-v3-Yrp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="SWr-Bb-L4I"/>
+                <constraint firstItem="FnF-03-Cij" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cQs-Az-sEc"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
