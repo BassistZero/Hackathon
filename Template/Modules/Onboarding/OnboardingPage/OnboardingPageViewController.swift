@@ -1,15 +1,16 @@
-//
-//  OnboardingPageViewController.swift
-//  Template
-//
-
 import UIKit
 
-class OnboardingPageViewController: UIViewController {
+final class OnboardingPageViewController: UIViewController {
+
+    // MARK: - Private Outlets
 
     @IBOutlet private var textLabel: UILabel!
 
+    // MARK: - Private Properties
+
     private var model: OnboardingPage
+
+    // MARK: Inits
 
     init(model: OnboardingPage) {
         self.model = model
@@ -20,12 +21,16 @@ class OnboardingPageViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - UIViewController
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTextLabel()
     }
 
 }
+
+// MARK: - Configuration
 
 private extension OnboardingPageViewController {
 

@@ -1,11 +1,6 @@
-//
-//  String.swift
-//  Template
-//
-
 import Foundation
 
-public extension String {
+extension String {
 
     static func localized(key: String) -> String {
         NSLocalizedString(key, comment: "")

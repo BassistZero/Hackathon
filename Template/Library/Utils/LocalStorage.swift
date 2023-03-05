@@ -1,13 +1,8 @@
-//
-//  LocalStorage.swift
-//  Template
-//
-
 import Foundation
 
 /// Утилита для сохранения локальных настроек пользователя и подобных данных
 /// Работат через `UserDefaults`
-public enum LocalStorage {
+enum LocalStorage {
     
     private enum Keys: String {
         case isOnboardingFinished
@@ -19,7 +14,7 @@ public enum LocalStorage {
 
 }
 
-public extension LocalStorage {
+extension LocalStorage {
 
     static var isOnboardingFinished: Bool {
         get {

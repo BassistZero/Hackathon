@@ -1,11 +1,6 @@
-//
-//  UIApplication.swift
-//  Template
-//
-
 import UIKit
 
-public extension UIApplication {
+extension UIApplication {
 
     static var firstKeyWindow: UIWindow? {
         return UIApplication.shared.delegate?.window ?? nil

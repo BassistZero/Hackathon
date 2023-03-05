@@ -1,20 +1,21 @@
-//
-//  OnboardingViewController.swift
-//  Template
-//
-
 import UIKit
 
-class OnboardingViewController: UIViewController {
+final class OnboardingViewController: UIViewController {
 
-    @IBOutlet private var pagesView: UIView!
-    @IBOutlet private var nextPageButton: UIButton!
+    // MARK: - Private Outlets
+
+    @IBOutlet private weak var pagesView: UIView!
+    @IBOutlet private weak var nextPageButton: UIButton!
+
+    // MARK: - Private Properties
 
     private var pageController: UIPageViewController?
     private var childControllers: [UIViewController] = []
 
     private let pages = OnboardingPage.all
     private var pageIndex = 0
+
+    // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,8 @@ class OnboardingViewController: UIViewController {
     }
 
 }
+
+// MARK: - UIPageViewControllerDelegate, UIPageViewControllerDataSource
 
 extension OnboardingViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
@@ -42,6 +45,33 @@ extension OnboardingViewController: UIPageViewControllerDataSource, UIPageViewCo
     }
 
 }
+
+// MARK: - Private Actions
+
+private extension OnboardingViewController {
+
+    @IBAction func handleNextPagePressed() {
+        pageIndex += 1
+        guard pageIndex < pages.count else {
+            finishOnboarding()
+            return
+        }
+
+        pageController?.setViewControllers(
+            [childControllers[pageIndex]],
+            direction: .forward,
+            animated: true
+        )
+        updateNextPageButton()
+    }
+
+    @IBAction func handleClosePressed() {
+        exit(0)
+    }
+
+}
+
+// MARK: - Configuration
 
 private extension OnboardingViewController {
 
@@ -86,29 +116,6 @@ private extension OnboardingViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             UIApplication.setInitialModule(MainViewController())
         }
-    }
-
-}
-
-private extension OnboardingViewController {
-
-    @IBAction func handleNextPagePressed() {
-        pageIndex += 1
-        guard pageIndex < pages.count else {
-            finishOnboarding()
-            return
-        }
-
-        pageController?.setViewControllers(
-            [childControllers[pageIndex]],
-            direction: .forward,
-            animated: true
-        )
-        updateNextPageButton()
-    }
-
-    @IBAction func handleClosePressed() {
-        exit(0)
     }
 
 }

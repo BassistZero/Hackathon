@@ -1,11 +1,6 @@
-//
-//  Array.swift
-//  Template
-//
-
 import Foundation
 
-public extension Array {
+extension Array {
 
     subscript(safe index: Index) -> Element? {
         if indices.contains(index) {

@@ -1,14 +1,13 @@
-//
-//  MainViewController.swift
-//  Template
-//
-
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
 
-    @IBOutlet private var scanButton: UIButton!
-    @IBOutlet private var manualEnterButton: UIButton!
+    // MARK: - Private Outlets
+
+    @IBOutlet private weak var scanButton: UIButton!
+    @IBOutlet private weak var manualEnterButton: UIButton!
+
+    // MARK: - UIViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,26 +16,19 @@ class MainViewController: UIViewController {
 
 }
 
+// MARK: - Configuration
+
 private extension MainViewController {
 
     func setupButtons() {
         [scanButton, manualEnterButton].forEach { $0?.configuration = .filled() }
         scanButton.setTitle(.localized(key: "Main.scanCode"), for: .normal)
         manualEnterButton.setTitle(.localized(key: "Main.manualEnter"), for: .normal)
-        
-    }
-
-    func showNoPermissionAlert() {
-        let alert = UIAlertController(
-            title: .localized(key: "PermissionAlert.title"),
-            message: .localized(key: "PermissionAlert.message"),
-            preferredStyle: .alert
-        )
-        alert.addAction(UIAlertAction(title: .localized(key: "PermissionAlert.ok"), style: .default))
-        present(alert, animated: true)
     }
 
 }
+
+// MARK: - Private Actions
 
 private extension MainViewController {
 
@@ -53,6 +45,22 @@ private extension MainViewController {
 
     @IBAction func handleManualEnterPressed() {
         // TODO: - открыть экран ввода кода с клавиатуры
+    }
+
+}
+
+// MARK: - Private Methods
+
+private extension MainViewController {
+
+    func showNoPermissionAlert() {
+        let alert = UIAlertController(
+            title: .localized(key: "PermissionAlert.title"),
+            message: .localized(key: "PermissionAlert.message"),
+            preferredStyle: .alert
+        )
+        alert.addAction(UIAlertAction(title: .localized(key: "PermissionAlert.ok"), style: .default))
+        present(alert, animated: true)
     }
 
 }
