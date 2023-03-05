@@ -11,4 +11,10 @@
 
 "PermissionAlert.title" = "У приложения нет доступа к камере";
 "PermissionAlert.message" = "Перейдите в настройки, чтобы предоставить доступ";
-"PermissionAlert.ok" = "OK";
+"PermissionAlert.ok" = "ОК";
+
+"RequestData" = "Запросить";
+
+"EmptyDataAlert.title" = "Тут пусто";
+"EmptyDataAlert.message" = "Сделай не пусто";
+"EmptyDataAlert.ok" = "ОК";

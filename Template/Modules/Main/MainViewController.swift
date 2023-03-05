@@ -44,7 +44,8 @@ private extension MainViewController {
     }
 
     @IBAction func handleManualEnterPressed() {
-        // TODO: - открыть экран ввода кода с клавиатуры
+        let controller = ManualViewController()
+        present(controller, animated: true)
     }
 
 }
