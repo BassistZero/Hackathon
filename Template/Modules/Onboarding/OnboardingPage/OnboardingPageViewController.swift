@@ -6,20 +6,9 @@ final class OnboardingPageViewController: UIViewController {
 
     @IBOutlet private var textLabel: UILabel!
 
-    // MARK: - Private Properties
+    // MARK: - Public Properties
 
-    private var model: OnboardingPage
-
-    // MARK: Inits
-
-    init(model: OnboardingPage) {
-        self.model = model
-        super.init(nibName: nil, bundle: nil)
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    var model: OnboardingPage?
 
     // MARK: - UIViewController
 
@@ -38,7 +27,7 @@ private extension OnboardingPageViewController {
         textLabel.numberOfLines = 0
         textLabel.font = .systemFont(ofSize: 32, weight: .regular)
         textLabel.textColor = .secondaryLabel
-        textLabel.text = model.text
+        textLabel.text = model?.text
     }
 
 }

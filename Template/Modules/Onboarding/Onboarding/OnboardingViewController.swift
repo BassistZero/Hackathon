@@ -88,7 +88,12 @@ private extension OnboardingViewController {
         pageController.view.frame = pagesView.frame
         pageController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 
-        childControllers = OnboardingPage.all.map { OnboardingPageViewController(model: $0) }
+        childControllers = OnboardingPage.all.map {
+            let controller = OnboardingPageViewController()
+            controller.model = $0
+            return controller
+        }
+
         pageController.setViewControllers(
             [childControllers[0]],
             direction: .forward,
