@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManualViewController" customModule="Template" customModuleProvider="target">
             <connections>
                 <outlet property="barCodeTextField" destination="Nd1-NS-sL4" id="Vp0-te-tjb"/>
+                <outlet property="messageLabel" destination="gBx-03-bUU" id="Cj3-xP-WnN"/>
                 <outlet property="requestInfoButton" destination="Ajx-c3-1xA" id="aEt-pg-DOw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,7 +28,7 @@
                         <constraint firstAttribute="width" constant="150" id="zy3-ui-SjL"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajx-c3-1xA">
                     <rect key="frame" x="159" y="463" width="75" height="35"/>
@@ -37,13 +38,22 @@
                         <action selector="sendBarCode:" destination="-1" eventType="touchUpInside" id="flB-tY-nQ0"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBx-03-bUU">
+                    <rect key="frame" x="121.66666666666669" y="380" width="150" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="gBx-03-bUU" firstAttribute="width" secondItem="Nd1-NS-sL4" secondAttribute="width" id="5ke-Nz-tpn"/>
                 <constraint firstItem="Nd1-NS-sL4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9pr-Ar-OvS"/>
+                <constraint firstItem="gBx-03-bUU" firstAttribute="leading" secondItem="Nd1-NS-sL4" secondAttribute="leading" id="IZH-wl-v66"/>
                 <constraint firstItem="Ajx-c3-1xA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IjC-G2-u7z"/>
                 <constraint firstItem="Ajx-c3-1xA" firstAttribute="top" secondItem="Nd1-NS-sL4" secondAttribute="bottom" constant="20" id="YZW-gd-BVi"/>
+                <constraint firstItem="Nd1-NS-sL4" firstAttribute="top" secondItem="gBx-03-bUU" secondAttribute="bottom" constant="8" id="b2f-7a-rSb"/>
                 <constraint firstItem="Nd1-NS-sL4" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="i5u-W4-Wxi"/>
             </constraints>
             <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
