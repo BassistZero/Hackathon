@@ -6,6 +6,7 @@ final class MainViewController: UIViewController {
 
     @IBOutlet private weak var scanButton: UIButton!
     @IBOutlet private weak var manualEnterButton: UIButton!
+    @IBOutlet private weak var favoritesButton: UIButton!
 
     // MARK: - UIViewController
     
@@ -21,9 +22,10 @@ final class MainViewController: UIViewController {
 private extension MainViewController {
 
     func setupButtons() {
-        [scanButton, manualEnterButton].forEach { $0?.configuration = .filled() }
+        [scanButton, manualEnterButton, favoritesButton].forEach { $0?.configuration = .filled() }
         scanButton.setTitle(.localized(key: "Main.scanCode"), for: .normal)
         manualEnterButton.setTitle(.localized(key: "Main.manualEnter"), for: .normal)
+        favoritesButton.setTitle(.localized(key: "Main.saved"), for: .normal)
     }
 
 }
@@ -35,7 +37,8 @@ private extension MainViewController {
     @IBAction func handleScanPressed() {
         PermissionManager.checkCameraPermission { [weak self] hasPermission in
             if hasPermission {
-                // TODO: - открыть экран сканирования кода
+                let controller = CameraViewController()
+                self?.present(controller, animated: true)
             } else {
                 self?.showNoPermissionAlert()
             }
@@ -45,6 +48,11 @@ private extension MainViewController {
 
     @IBAction func handleManualEnterPressed() {
         let controller = ManualViewController()
+        present(controller, animated: true)
+    }
+
+    @IBAction func handleSavedBarCodesPressed() {
+        let controller = SavedViewController()
         present(controller, animated: true)
     }
 

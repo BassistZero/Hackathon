@@ -13,6 +13,10 @@
 		024E651A29B4B43F00836D05 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024E651829B4B43F00836D05 /* DetailViewController.xib */; };
 		024E651E29B4BB7F00836D05 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024E651C29B4BB7F00836D05 /* FavoriteTableViewCell.swift */; };
 		024E651F29B4BB7F00836D05 /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024E651D29B4BB7F00836D05 /* FavoriteTableViewCell.xib */; };
+		024E652629B4CB5D00836D05 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024E652429B4CB5D00836D05 /* CameraViewController.swift */; };
+		024E652729B4CB5D00836D05 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024E652529B4CB5D00836D05 /* CameraViewController.xib */; };
+		024E652B29B4D1E000836D05 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024E652929B4D1E000836D05 /* SavedViewController.swift */; };
+		024E652C29B4D1E000836D05 /* SavedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024E652A29B4D1E000836D05 /* SavedViewController.xib */; };
 		0AB7691F29AFF320002119A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7691E29AFF320002119A0 /* AppDelegate.swift */; };
 		0AB7692829AFF321002119A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB7692729AFF321002119A0 /* Assets.xcassets */; };
 		0AB7692B29AFF321002119A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AB7692929AFF321002119A0 /* LaunchScreen.storyboard */; };
@@ -38,6 +42,10 @@
 		024E651829B4B43F00836D05 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		024E651C29B4BB7F00836D05 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		024E651D29B4BB7F00836D05 /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
+		024E652429B4CB5D00836D05 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		024E652529B4CB5D00836D05 /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		024E652929B4D1E000836D05 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		024E652A29B4D1E000836D05 /* SavedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedViewController.xib; sourceTree = "<group>"; };
 		0AB7691B29AFF320002119A0 /* Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB7691E29AFF320002119A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AB7692729AFF321002119A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +105,22 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		024E652329B4CB4100836D05 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				024E652429B4CB5D00836D05 /* CameraViewController.swift */,
+				024E652529B4CB5D00836D05 /* CameraViewController.xib */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		024E652829B4D1D200836D05 /* Saved */ = {
+			isa = PBXGroup;
+			children = (
+				024E652929B4D1E000836D05 /* SavedViewController.swift */,
+				024E652A29B4D1E000836D05 /* SavedViewController.xib */,
+			);
+			path = Saved;
 			sourceTree = "<group>";
 		};
 		0AB7691229AFF320002119A0 = {
@@ -122,8 +146,6 @@
 				0AB7693329B0A6D7002119A0 /* Library */,
 				0AB7693729B0AA58002119A0 /* Modules */,
 				0AB7694329B0BB54002119A0 /* Resources */,
-				0AB7692929AFF321002119A0 /* LaunchScreen.storyboard */,
-				0AB7692C29AFF321002119A0 /* Info.plist */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -131,6 +153,8 @@
 		0AB7693229B09AA2002119A0 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				0AB7692C29AFF321002119A0 /* Info.plist */,
+				0AB7692929AFF321002119A0 /* LaunchScreen.storyboard */,
 				0AB7691E29AFF320002119A0 /* AppDelegate.swift */,
 			);
 			path = App;
@@ -157,7 +181,8 @@
 		0AB7693729B0AA58002119A0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				021DEADB29B4A41D00463A3B /* New Group */,
+				024E652829B4D1D200836D05 /* Saved */,
+				024E652329B4CB4100836D05 /* Camera */,
 				021DEADB29B4A41D00463A3B /* Detail */,
 				021DEAD629B49BBD00463A3B /* Manual */,
 				0AB7695B29B0D5A3002119A0 /* Main */,
@@ -237,6 +262,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AB7692F29AFF321002119A0 /* Build configuration list for PBXNativeTarget "Template" */;
 			buildPhases = (
+				029A32AD29B5EC1C00ED82E9 /* Show `// TODO / FIXME:` as a yellow warning */,
 				0AB7691729AFF320002119A0 /* Sources */,
 				0AB7691829AFF320002119A0 /* Frameworks */,
 				0AB7691929AFF320002119A0 /* Resources */,
@@ -290,6 +316,7 @@
 			files = (
 				021DEADA29B49BE600463A3B /* ManualViewController.xib in Resources */,
 				0AB7692B29AFF321002119A0 /* LaunchScreen.storyboard in Resources */,
+				024E652C29B4D1E000836D05 /* SavedViewController.xib in Resources */,
 				0AB7695F29B0D6B6002119A0 /* MainViewController.xib in Resources */,
 				024E651A29B4B43F00836D05 /* DetailViewController.xib in Resources */,
 				0AB7694529B0BB89002119A0 /* Localizable.strings in Resources */,
@@ -297,10 +324,33 @@
 				0AB7695729B0C06F002119A0 /* OnboardingPageViewController.xib in Resources */,
 				0AB7692829AFF321002119A0 /* Assets.xcassets in Resources */,
 				0AB7693C29B0AA91002119A0 /* OnboardingViewController.xib in Resources */,
+				024E652729B4CB5D00836D05 /* CameraViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		029A32AD29B5EC1C00ED82E9 /* Show `// TODO / FIXME:` as a yellow warning */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Show `// TODO / FIXME:` as a yellow warning";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nTAGS=\"TODO:|FIXME:\"\nERRORTAG=\"ERROR:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$|($ERRORTAG).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\" | perl -p -e \"s/($ERRORTAG)/ error: \\$1/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AB7691729AFF320002119A0 /* Sources */ = {
@@ -312,11 +362,13 @@
 				0AB7693B29B0AA91002119A0 /* OnboardingViewController.swift in Sources */,
 				024E651929B4B43F00836D05 /* DetailViewController.swift in Sources */,
 				0AB7693629B0A7D8002119A0 /* LocalStorage.swift in Sources */,
+				024E652B29B4D1E000836D05 /* SavedViewController.swift in Sources */,
 				0AB7694A29B0BD8F002119A0 /* String.swift in Sources */,
 				0AB7695A29B0C607002119A0 /* Array.swift in Sources */,
 				024E651E29B4BB7F00836D05 /* FavoriteTableViewCell.swift in Sources */,
 				021DEAD929B49BE600463A3B /* ManualViewController.swift in Sources */,
 				0AB7696429B12B43002119A0 /* PermissionManager.swift in Sources */,
+				024E652629B4CB5D00836D05 /* CameraViewController.swift in Sources */,
 				0AB7695E29B0D6B6002119A0 /* MainViewController.swift in Sources */,
 				0AB7695629B0C06F002119A0 /* OnboardingPageViewController.swift in Sources */,
 				0AB7694229B0BABA002119A0 /* OnboardingPage.swift in Sources */,
@@ -460,7 +512,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SMNXVGXK4L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Template/Info.plist;
+				INFOPLIST_FILE = Template/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Template;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Для сканирования штрихкодов нужен доступ к камере";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -494,7 +546,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SMNXVGXK4L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Template/Info.plist;
+				INFOPLIST_FILE = Template/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Template;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Для сканирования штрихкодов нужен доступ к камере";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

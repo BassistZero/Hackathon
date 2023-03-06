@@ -66,7 +66,7 @@ private extension OnboardingViewController {
     }
 
     @IBAction func handleClosePressed() {
-        exit(0)
+        UIApplication.setInitialModule(MainViewController())
     }
 
 }
@@ -118,9 +118,7 @@ private extension OnboardingViewController {
 
     func finishOnboarding() {
         LocalStorage.isOnboardingFinished = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            UIApplication.setInitialModule(MainViewController())
-        }
+        UIApplication.setInitialModule(MainViewController())
     }
 
 }
