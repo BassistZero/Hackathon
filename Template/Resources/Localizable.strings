@@ -18,3 +18,8 @@
 "EmptyDataAlert.title" = "Тут пусто";
 "EmptyDataAlert.message" = "Сделай не пусто";
 "EmptyDataAlert.ok" = "ОК";
+
+"Camera.alert.title" = "Scanning not supported";
+"Camera.alert.message" = "Your device does not support scanning a code from an item. Please use a device with a camera.";
+"Camera.alert.ok" = "ОК";
+

@@ -13,6 +13,8 @@
 		024E651A29B4B43F00836D05 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024E651829B4B43F00836D05 /* DetailViewController.xib */; };
 		024E651E29B4BB7F00836D05 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024E651C29B4BB7F00836D05 /* FavoriteTableViewCell.swift */; };
 		024E651F29B4BB7F00836D05 /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024E651D29B4BB7F00836D05 /* FavoriteTableViewCell.xib */; };
+		024E652629B4CB5D00836D05 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024E652429B4CB5D00836D05 /* CameraViewController.swift */; };
+		024E652729B4CB5D00836D05 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024E652529B4CB5D00836D05 /* CameraViewController.xib */; };
 		0AB7691F29AFF320002119A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7691E29AFF320002119A0 /* AppDelegate.swift */; };
 		0AB7692829AFF321002119A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB7692729AFF321002119A0 /* Assets.xcassets */; };
 		0AB7692B29AFF321002119A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AB7692929AFF321002119A0 /* LaunchScreen.storyboard */; };
@@ -38,6 +40,8 @@
 		024E651829B4B43F00836D05 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		024E651C29B4BB7F00836D05 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		024E651D29B4BB7F00836D05 /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
+		024E652429B4CB5D00836D05 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		024E652529B4CB5D00836D05 /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
 		0AB7691B29AFF320002119A0 /* Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB7691E29AFF320002119A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AB7692729AFF321002119A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +99,15 @@
 				024E651D29B4BB7F00836D05 /* FavoriteTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		024E652329B4CB4100836D05 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				024E652429B4CB5D00836D05 /* CameraViewController.swift */,
+				024E652529B4CB5D00836D05 /* CameraViewController.xib */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 			sourceTree = "<group>";
@@ -158,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				021DEADB29B4A41D00463A3B /* New Group */,
+				024E652329B4CB4100836D05 /* Camera */,
 				021DEADB29B4A41D00463A3B /* Detail */,
 				021DEAD629B49BBD00463A3B /* Manual */,
 				0AB7695B29B0D5A3002119A0 /* Main */,
@@ -297,6 +311,7 @@
 				0AB7695729B0C06F002119A0 /* OnboardingPageViewController.xib in Resources */,
 				0AB7692829AFF321002119A0 /* Assets.xcassets in Resources */,
 				0AB7693C29B0AA91002119A0 /* OnboardingViewController.xib in Resources */,
+				024E652729B4CB5D00836D05 /* CameraViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +332,7 @@
 				024E651E29B4BB7F00836D05 /* FavoriteTableViewCell.swift in Sources */,
 				021DEAD929B49BE600463A3B /* ManualViewController.swift in Sources */,
 				0AB7696429B12B43002119A0 /* PermissionManager.swift in Sources */,
+				024E652629B4CB5D00836D05 /* CameraViewController.swift in Sources */,
 				0AB7695E29B0D6B6002119A0 /* MainViewController.swift in Sources */,
 				0AB7695629B0C06F002119A0 /* OnboardingPageViewController.swift in Sources */,
 				0AB7694229B0BABA002119A0 /* OnboardingPage.swift in Sources */,
