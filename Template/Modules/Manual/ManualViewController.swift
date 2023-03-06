@@ -86,8 +86,6 @@ private extension ManualViewController {
         let controller = DetailViewController()
         guard let barCode = barCodeTextField.text else { return }
 
-        LocalStorage.appendBarCode(barCode)
-
         controller.barCode = barCode
         present(controller, animated: true)
     }
