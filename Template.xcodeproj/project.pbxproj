@@ -122,8 +122,6 @@
 				0AB7693329B0A6D7002119A0 /* Library */,
 				0AB7693729B0AA58002119A0 /* Modules */,
 				0AB7694329B0BB54002119A0 /* Resources */,
-				0AB7692929AFF321002119A0 /* LaunchScreen.storyboard */,
-				0AB7692C29AFF321002119A0 /* Info.plist */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -131,6 +129,8 @@
 		0AB7693229B09AA2002119A0 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				0AB7692C29AFF321002119A0 /* Info.plist */,
+				0AB7692929AFF321002119A0 /* LaunchScreen.storyboard */,
 				0AB7691E29AFF320002119A0 /* AppDelegate.swift */,
 			);
 			path = App;
@@ -460,7 +460,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SMNXVGXK4L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Template/Info.plist;
+				INFOPLIST_FILE = Template/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Template;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Для сканирования штрихкодов нужен доступ к камере";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -494,7 +494,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SMNXVGXK4L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Template/Info.plist;
+				INFOPLIST_FILE = Template/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Template;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Для сканирования штрихкодов нужен доступ к камере";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
