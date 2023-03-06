@@ -66,7 +66,7 @@ private extension OnboardingViewController {
     }
 
     @IBAction func handleClosePressed() {
-        exit(0)
+        UIApplication.setInitialModule(MainViewController())
     }
 
 }
