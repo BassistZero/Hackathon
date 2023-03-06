@@ -23,3 +23,5 @@
 "Camera.alert.message" = "Your device does not support scanning a code from an item. Please use a device with a camera.";
 "Camera.alert.ok" = "ОК";
 
+"Detail.saveButton.notSaved" = "Добавить в избранное";
+"Detail.saveButton.saved" = "Убрать из избранного";
