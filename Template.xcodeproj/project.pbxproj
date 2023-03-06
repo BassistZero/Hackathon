@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		021DEAD929B49BE600463A3B /* ManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021DEAD729B49BE600463A3B /* ManualViewController.swift */; };
 		021DEADA29B49BE600463A3B /* ManualViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021DEAD829B49BE600463A3B /* ManualViewController.xib */; };
+		024E651929B4B43F00836D05 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024E651729B4B43F00836D05 /* DetailViewController.swift */; };
+		024E651A29B4B43F00836D05 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024E651829B4B43F00836D05 /* DetailViewController.xib */; };
+		024E651E29B4BB7F00836D05 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024E651C29B4BB7F00836D05 /* FavoriteTableViewCell.swift */; };
+		024E651F29B4BB7F00836D05 /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024E651D29B4BB7F00836D05 /* FavoriteTableViewCell.xib */; };
 		0AB7691F29AFF320002119A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7691E29AFF320002119A0 /* AppDelegate.swift */; };
 		0AB7692829AFF321002119A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB7692729AFF321002119A0 /* Assets.xcassets */; };
 		0AB7692B29AFF321002119A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AB7692929AFF321002119A0 /* LaunchScreen.storyboard */; };
@@ -30,6 +34,10 @@
 /* Begin PBXFileReference section */
 		021DEAD729B49BE600463A3B /* ManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
 		021DEAD829B49BE600463A3B /* ManualViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManualViewController.xib; sourceTree = "<group>"; };
+		024E651729B4B43F00836D05 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		024E651829B4B43F00836D05 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		024E651C29B4BB7F00836D05 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		024E651D29B4BB7F00836D05 /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
 		0AB7691B29AFF320002119A0 /* Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB7691E29AFF320002119A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AB7692729AFF321002119A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,11 +78,25 @@
 			path = Manual;
 			sourceTree = "<group>";
 		};
-		021DEADB29B4A41D00463A3B /* New Group */ = {
+		021DEADB29B4A41D00463A3B /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				024E651B29B4BB6900836D05 /* Cells */,
+				024E651729B4B43F00836D05 /* DetailViewController.swift */,
+				024E651829B4B43F00836D05 /* DetailViewController.xib */,
 			);
-			path = "New Group";
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		024E651B29B4BB6900836D05 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				024E651C29B4BB7F00836D05 /* FavoriteTableViewCell.swift */,
+				024E651D29B4BB7F00836D05 /* FavoriteTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 			sourceTree = "<group>";
 		};
 		0AB7691229AFF320002119A0 = {
@@ -136,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				021DEADB29B4A41D00463A3B /* New Group */,
+				021DEADB29B4A41D00463A3B /* Detail */,
 				021DEAD629B49BBD00463A3B /* Manual */,
 				0AB7695B29B0D5A3002119A0 /* Main */,
 				0AB7694E29B0BFA7002119A0 /* Onboarding */,
@@ -268,7 +291,9 @@
 				021DEADA29B49BE600463A3B /* ManualViewController.xib in Resources */,
 				0AB7692B29AFF321002119A0 /* LaunchScreen.storyboard in Resources */,
 				0AB7695F29B0D6B6002119A0 /* MainViewController.xib in Resources */,
+				024E651A29B4B43F00836D05 /* DetailViewController.xib in Resources */,
 				0AB7694529B0BB89002119A0 /* Localizable.strings in Resources */,
+				024E651F29B4BB7F00836D05 /* FavoriteTableViewCell.xib in Resources */,
 				0AB7695729B0C06F002119A0 /* OnboardingPageViewController.xib in Resources */,
 				0AB7692829AFF321002119A0 /* Assets.xcassets in Resources */,
 				0AB7693C29B0AA91002119A0 /* OnboardingViewController.xib in Resources */,
@@ -285,9 +310,11 @@
 				0AB7693F29B0ABAA002119A0 /* UIApplication.swift in Sources */,
 				0AB7691F29AFF320002119A0 /* AppDelegate.swift in Sources */,
 				0AB7693B29B0AA91002119A0 /* OnboardingViewController.swift in Sources */,
+				024E651929B4B43F00836D05 /* DetailViewController.swift in Sources */,
 				0AB7693629B0A7D8002119A0 /* LocalStorage.swift in Sources */,
 				0AB7694A29B0BD8F002119A0 /* String.swift in Sources */,
 				0AB7695A29B0C607002119A0 /* Array.swift in Sources */,
+				024E651E29B4BB7F00836D05 /* FavoriteTableViewCell.swift in Sources */,
 				021DEAD929B49BE600463A3B /* ManualViewController.swift in Sources */,
 				0AB7696429B12B43002119A0 /* PermissionManager.swift in Sources */,
 				0AB7695E29B0D6B6002119A0 /* MainViewController.swift in Sources */,
