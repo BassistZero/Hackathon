@@ -8,6 +8,7 @@
 
 "Main.scanCode" = "Сканировать штрихкод с помощью камеры";
 "Main.manualEnter" = "Ввести код вручную";
+"Main.saved" = "Избранное";
 
 "PermissionAlert.title" = "У приложения нет доступа к камере";
 "PermissionAlert.message" = "Перейдите в настройки, чтобы предоставить доступ";
